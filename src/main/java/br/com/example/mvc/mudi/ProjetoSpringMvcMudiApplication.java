@@ -8,6 +8,7 @@ public class ProjetoSpringMvcMudiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjetoSpringMvcMudiApplication.class, args);
+		
+		
 	}
-
 }
