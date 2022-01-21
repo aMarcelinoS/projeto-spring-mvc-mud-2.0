@@ -21,7 +21,7 @@
 						<label class="form-label" for="urlProduto">Url:</label>
 						<input th:field="*{urlProduto}" th:errorclass="is-invalid" class="form-control" placeholder="url do produto"/>
 						<small>Procure em um site o produto que você deseja e cole aqui.</small>
-						<div class="invalid-feedback" id="validationServer03" th:errors="*{urlProduto}">
+						<div class="invalid-feedback"  th:errors="*{urlProduto}">
 							Erros da url do produto
 						</div>	
 					</div>	
@@ -29,7 +29,7 @@
 						<label class="form-label" for="urlImagem">Imagem:</label>
 						<input th:field="*{urlImagem}" th:errorclass="is-invalid" class="form-control" placeholder="url da imagem"/>
 						<small>Copie a url de uma boa imagem do produto e cole aqui para ajudar a conseguir compradores</small>
-						<div class="invalid-feedback" id="validationServer03" th:errors="*{urlImagem}">
+						<div class="invalid-feedback"  th:errors="*{urlImagem}">
 							Erros da url da imagem
 						</div>	
 					</div>	
