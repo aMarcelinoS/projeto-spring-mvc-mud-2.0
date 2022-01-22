@@ -6,10 +6,14 @@ import java.time.LocalDate;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import br.com.example.mvc.mudi.enuns.StatusPedido;
 
 @Entity
 @Table(name = "pedidos")
@@ -24,6 +28,9 @@ public class Pedido {
 	private String urlProduto;
 	private String urlImagem;
 	private String descricao;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	private User user;
 	
 	@Enumerated(EnumType.STRING)
 	private StatusPedido status;

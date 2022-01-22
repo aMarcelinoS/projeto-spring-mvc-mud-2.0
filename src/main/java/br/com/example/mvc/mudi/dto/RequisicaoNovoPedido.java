@@ -2,8 +2,8 @@ package br.com.example.mvc.mudi.dto;
 
 import javax.validation.constraints.NotBlank;
 
+import br.com.example.mvc.mudi.enuns.StatusPedido;
 import br.com.example.mvc.mudi.model.Pedido;
-import br.com.example.mvc.mudi.model.StatusPedido;
 
 public class RequisicaoNovoPedido {
 
