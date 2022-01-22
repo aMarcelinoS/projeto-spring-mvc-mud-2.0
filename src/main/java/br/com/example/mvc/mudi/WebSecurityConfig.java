@@ -20,16 +20,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		.authorizeRequests()
 			.anyRequest().authenticated()
 		.and()
-			.formLogin(form -> form.loginPage("/login").permitAll());
+			.formLogin(form -> form
+				.loginPage("/login")
+				.permitAll()
+			).logout(logout -> logout.logoutUrl("/logout"));
 	}
 		
 		@Bean
-		@Override
-		public UserDetailsService userDetailsService() {
-			UserDetails user =
-				 User.withDefaultPasswordEncoder()
-					.username("user")
-					.password("user")
+		public UserDetailsService userDetailService() {
+			UserDetails user = User.withDefaultPasswordEncoder()
+					.username("joao")
+					.password("joao")
 					.roles("ADM")
 					.build();
 
