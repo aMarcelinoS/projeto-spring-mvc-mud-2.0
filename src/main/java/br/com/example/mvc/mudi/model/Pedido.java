@@ -13,6 +13,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import br.com.example.mvc.mudi.enuns.StatusPedido;
 
 @Entity
@@ -30,6 +32,7 @@ public class Pedido {
 	private String descricao;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonIgnore
 	private User user;
 	
 	@Enumerated(EnumType.STRING)
