@@ -11,15 +11,15 @@ Tecnologias utilizadas para o desenvolvimento:
 
 Front-end
 
-HTML
-Bootstrap
-Thymeleaf
-VueJs
+HTML |
+Bootstrap |
+Thymeleaf |
+VueJs |
 
 Back-end
 
-Java 11
-Spring MVC
-Spring Data Jpa
-Spring Security
-MySQL
+Java 11 |
+Spring MVC |
+Spring Data Jpa |
+Spring Security |
+MySQL |
