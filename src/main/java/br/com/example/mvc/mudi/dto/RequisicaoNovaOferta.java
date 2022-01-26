@@ -8,7 +8,7 @@ import br.com.example.mvc.mudi.model.Oferta;
 
 public class RequisicaoNovaOferta {
 	
-	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	
 	private Long pedidoId;
 	private String valor;
@@ -46,7 +46,7 @@ public class RequisicaoNovaOferta {
 		oferta.setDataEntrega(LocalDate.parse(this.dataEntrega, formatter));
 		oferta.setValor(new BigDecimal(this.valor));
 		oferta.setComentario(this.comentario);
-		return null;
+		return oferta;
 	}
 	
 	
