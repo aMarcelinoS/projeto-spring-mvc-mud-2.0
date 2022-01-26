@@ -1,6 +1,6 @@
 Projeto desenvolvido para o acompanhamento do curso de Spring MVC:
 
-Aplicação web com o objetivo de interligar pessoas que querem comprar pordutos importados de outros países com pessoas
+Aplicação web com o objetivo de interligar pessoas que querem comprar produtos importados de outros países com pessoas
 que estão viajando por esses países e podem trazer o produto solicitado.
 
 - A pessoa que quer importar faz o login, cadastra o produto desejado, com nome, foto, link do produto em alguma loja
